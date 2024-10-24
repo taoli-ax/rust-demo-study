@@ -1,10 +1,12 @@
 mod list_testcase;
 mod formatting;
+mod primitives;
 
 use list_testcase::List;
 use formatting::Color;
 use std::fmt;
-use std::fmt::{write, Formatter};
+use std::fmt::{Formatter};
+use primitives::index::primitives_index;
 
 #[derive(Debug)]
 struct Structure(i32);
@@ -70,4 +72,7 @@ fn main(){
     let color2 = Color{red:0, green:3, blue:254};
     println!("Display: {}", color);
     println!("Display: {}", color2);
+
+
+    primitives_index()
 }
