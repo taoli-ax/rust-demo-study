@@ -1,12 +1,16 @@
 mod list_testcase;
 mod formatting;
 mod primitives;
+mod primitives_2_0;
 
 use list_testcase::List;
 use formatting::Color;
 use std::fmt;
 use std::fmt::{Formatter};
 use primitives::index::primitives_index;
+use primitives_2_0::example;
+use primitives::tuple_2_2::test_main;
+use primitives::slice_2_3::slice_main;
 
 #[derive(Debug)]
 struct Structure(i32);
@@ -74,5 +78,11 @@ fn main(){
     println!("Display: {}", color2);
 
 
-    primitives_index()
+    primitives_index();
+
+    example();
+
+    test_main();
+
+    slice_main();
 }
